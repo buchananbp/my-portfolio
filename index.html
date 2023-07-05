@@ -1,15 +1,96 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
+<!DOCTYPE html>
+<html lang="en">
 
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
 
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .painting {
+      display: grid;
+      gap: 9px;
+      grid-template-rows: 414px 130px 155px 20px;
+      grid-template-columns: 320px 198px 153px 50px;
+      width: 748px;
+      height: 748px;
+      background-color: #000;
+    }
+    .red-box {
+      background-color: #E72F24;
+    }
+    .blue-box {
+      background-color: #004592;
+      order: 4;
+      border-bottom: 10px solid #000;
+    }
+    .yellow-box {
+      background-color: #F9D01E;
+      order: 7;
+    }
+    .black-box {
+      background-color: #232629;
+      order: 8;
+    }
+    .white1 {
+      background-color: #F0F1EC;
+      order: 1;
+      grid-area: 1 / 2 / 2 / 5;
+    }
+    .white2 {
+      background-color: #F0F1EC;
+      order: 2;
+      grid-area: 2 / 1 / 4 / 2;
+    }
+    .white3 {
+      background-color: #F0F1EC;
+      order: 3;
+      grid-area: 2 / 2 / 4 / 4;
+    }
+    .white4 {
+      background-color: #F0F1EC;
+      order: 5;
+      grid-area: 3 / 4 / 5 / 5
+    }
+    .white5 {
+      background-color: #F0F1EC;
+      order: 6;
+    }
 
-<!-- TODO 4: Add titles/subtitles etc. -->
 
-<!-- TODO 5: Add a link to the project pages -->
+  </style>
+</head>
 
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
+<body>
+  <div class="painting">
+    <div class="red-box"></div>
+    <div class="blue-box"></div>
+    <div class="yellow-box"></div>
+    <div class="black-box"></div>
 
-<!-- TODO 7: Add the Contact Me and About Me page links -->
+    <div class="white1"></div> 
+    <div class="white2"></div>
+    <div class="white3"></div>
+    <div class="white4"></div>
+    <div class="white5"></div>
+  </div>
+</body>
+
+</html>
